@@ -949,14 +949,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 0;
     visibility: hidden;
-    transition: opacity 0.4s cubic-bezier(0.22, 1, 0.36, 1), visibility 0.4s;
+    pointer-events: none;
   }
 
   .modal-overlay.active {
-    opacity: 1;
     visibility: visible;
+    pointer-events: auto;
   }
 
   .modal-backdrop {
@@ -965,6 +964,12 @@
     background: rgba(26, 23, 20, 0.6);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
+    opacity: 0;
+    transition: opacity 0.15s ease;
+  }
+
+  .modal-overlay.active .modal-backdrop {
+    opacity: 1;
   }
 
   .modal-container {
@@ -1363,7 +1368,8 @@
     <p class="hero-byline">By <a href="https://romanslack.com" target="_blank" rel="noopener" class="byline-link">Roman Slack</a> &amp; <a href="https://www.anthropic.com/news/claude-opus-4-6" target="_blank" rel="noopener" class="byline-link">Opus4.6</a></p>
     <p class="hero-subtitle">The uncomfortable truth about AI adoption in business, and why the companies getting it right look nothing like what you'd expect.</p>
     <div class="hero-line"></div>
-    <p class="hero-cta-hint">Read below or listen to the audio version</p>
+    <!-- AUDIO: Change back to "Read below or listen to the audio version" when audio is enabled -->
+    <p class="hero-cta-hint">Read below</p>
     <svg class="hero-chevron" width="20" height="12" viewBox="0 0 20 12" fill="none"><path d="M2 2l8 8 8-8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
   </section>
 
@@ -1383,6 +1389,8 @@
         </svg>
         <span>5 min read</span>
       </div>
+      <!-- AUDIO: Uncomment the block below and add your audio.mp3 file to enable -->
+      <!--
       <div class="read-bar-divider"></div>
       <div class="audio-player" id="audioPlayer">
         <button class="audio-play-btn" id="audioPlayBtn" aria-label="Play audio">
@@ -1401,8 +1409,9 @@
         <span class="audio-time" id="audioTime">0:00</span>
         <span class="audio-label">Listen to article</span>
       </div>
+      -->
     </div>
-    <audio id="audioElement" preload="metadata" src="audio.mp3"></audio>
+    <!-- <audio id="audioElement" preload="metadata" src="audio.mp3"></audio> -->
   </div>
 
   <!-- ==================== THE PARADOX ==================== -->
@@ -1706,7 +1715,8 @@
     });
   });
 
-  // ===== Audio player =====
+  // AUDIO: Uncomment the block below to enable the audio player
+  /*
   const audio = document.getElementById('audioElement');
   const playBtn = document.getElementById('audioPlayBtn');
   const iconPlay = playBtn.querySelector('.icon-play');
@@ -1765,6 +1775,7 @@
       audio.currentTime = pct * audio.duration;
     }
   });
+  */
 
   // ===== Contact modal =====
   const modal = document.getElementById('contactModal');
