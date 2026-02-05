@@ -1,0 +1,1800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Primary Meta -->
+<title>Why Isn't AI Good Yet? | Roman Slack</title>
+<meta name="title" content="Why Isn't AI Good Yet? | Roman Slack">
+<meta name="description" content="The uncomfortable truth about AI adoption in business. Why guardrails kill performance, why employees resist implementation, and why the companies getting AI right look nothing like what you'd expect. By Roman Slack.">
+<meta name="author" content="Roman Slack">
+<meta name="keywords" content="AI adoption, artificial intelligence, business AI, autonomous AI systems, AI implementation, AI strategy, Roman Slack, enterprise AI, AI transformation, AI guardrails">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://whyisntaigoodyet.com/">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://whyisntaigoodyet.com/">
+<meta property="og:title" content="Why Isn't AI Good Yet?">
+<meta property="og:description" content="The uncomfortable truth about AI adoption in business. Why guardrails kill performance, why employees resist implementation, and why your competitor is about to leave you behind.">
+<meta property="og:image" content="https://whyisntaigoodyet.com/1image.jpg">
+<meta property="og:image:width" content="1400">
+<meta property="og:image:height" content="781">
+<meta property="og:site_name" content="Why Isn't AI Good Yet?">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="Roman Slack">
+<meta property="article:published_time" content="2026-02-05">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://whyisntaigoodyet.com/">
+<meta name="twitter:title" content="Why Isn't AI Good Yet?">
+<meta name="twitter:description" content="The uncomfortable truth about AI adoption in business. Why guardrails kill performance, why employees resist implementation, and why your competitor is about to leave you behind.">
+<meta name="twitter:image" content="https://whyisntaigoodyet.com/1image.jpg">
+
+<!-- Schema.org JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Why Isn't AI Good Yet?",
+  "description": "The uncomfortable truth about AI adoption in business. Why guardrails kill performance, why employees resist implementation, and why the companies getting AI right look nothing like what you'd expect.",
+  "image": "https://whyisntaigoodyet.com/1image.jpg",
+  "datePublished": "2026-02-05",
+  "dateModified": "2026-02-05",
+  "author": {
+    "@type": "Person",
+    "name": "Roman Slack",
+    "url": "https://romanslack.com"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Roman Slack",
+    "url": "https://romanslack.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://whyisntaigoodyet.com/"
+  },
+  "url": "https://whyisntaigoodyet.com/",
+  "inLanguage": "en-US",
+  "keywords": ["AI adoption", "artificial intelligence", "business AI", "autonomous AI systems", "AI strategy"]
+}
+</script>
+
+<!-- Favicons -->
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="manifest" href="site.webmanifest">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  /* ========== RESET & BASE ========== */
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --white: #FAFAF8;
+    --off-white: #F5F4F0;
+    --stone-light: #E8E4DD;
+    --stone: #8B7D6B;
+    --stone-dark: #6B5F50;
+    --stone-deeper: #4A4139;
+    --black: #1A1714;
+    --ink: #2C2822;
+    --warm-gray: #B5AD9F;
+    --cream: #F0EDE6;
+    --accent-warm: #A39178;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-size: 18px;
+  }
+
+  body {
+    font-family: 'Source Serif 4', Georgia, serif;
+    color: var(--ink);
+    background-color: var(--white);
+    line-height: 1.75;
+    overflow-x: hidden;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ========== TOPOGRAPHIC BACKGROUND ========== */
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.032;
+    background-image: url("data:image/svg+xml,%3Csvg width='600' height='600' viewBox='0 0 600 600' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%238B7D6B' stroke-width='1'%3E%3Cellipse cx='300' cy='300' rx='280' ry='200'/%3E%3Cellipse cx='300' cy='300' rx='240' ry='170'/%3E%3Cellipse cx='300' cy='300' rx='200' ry='140'/%3E%3Cellipse cx='300' cy='300' rx='160' ry='110'/%3E%3Cellipse cx='300' cy='300' rx='120' ry='80'/%3E%3Cellipse cx='300' cy='300' rx='80' ry='50'/%3E%3Cellipse cx='300' cy='300' rx='40' ry='25'/%3E%3Cellipse cx='150' cy='150' rx='130' ry='90' transform='rotate(-20 150 150)'/%3E%3Cellipse cx='150' cy='150' rx='90' ry='60' transform='rotate(-20 150 150)'/%3E%3Cellipse cx='150' cy='150' rx='50' ry='30' transform='rotate(-20 150 150)'/%3E%3Cellipse cx='480' cy='450' rx='110' ry='80' transform='rotate(15 480 450)'/%3E%3Cellipse cx='480' cy='450' rx='70' ry='50' transform='rotate(15 480 450)'/%3E%3Cellipse cx='480' cy='450' rx='30' ry='20' transform='rotate(15 480 450)'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: 600px 600px;
+  }
+
+  /* Grain overlay */
+  body::after {
+    content: '';
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.025;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    background-size: 256px 256px;
+  }
+
+  /* ========== LAYOUT ========== */
+  .content-wrapper {
+    position: relative;
+    z-index: 1;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  section {
+    padding: 5rem 0;
+  }
+
+  /* ========== NAVIGATION DOT TRACK ========== */
+  .nav-track {
+    position: fixed;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .nav-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--warm-gray);
+    border: none;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+    padding: 0;
+  }
+
+  .nav-dot:hover,
+  .nav-dot.active {
+    background: var(--stone-dark);
+    transform: scale(1.5);
+  }
+
+  /* ========== HERO ========== */
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+  }
+
+  .hero-eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--stone);
+    margin-bottom: 2rem;
+    opacity: 0;
+    animation: fadeUp 1s 0.3s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+
+  .hero h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 900;
+    font-size: clamp(3rem, 7vw, 5.5rem);
+    line-height: 1.05;
+    color: var(--black);
+    letter-spacing: -0.025em;
+    margin-bottom: 2rem;
+    opacity: 0;
+    animation: fadeUp 1s 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+
+  .hero h1 em {
+    font-style: italic;
+    color: var(--stone-dark);
+  }
+
+  .hero-byline {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    color: var(--stone);
+    margin-bottom: 1.5rem;
+    opacity: 0;
+    animation: fadeUp 1s 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+
+  .byline-link {
+    color: var(--stone-dark);
+    text-decoration: none;
+    border-bottom: 1px solid var(--stone-light);
+    transition: color 0.3s ease, border-color 0.3s ease;
+  }
+
+  .byline-link:hover {
+    color: var(--black);
+    border-color: var(--black);
+  }
+
+  .hero-subtitle {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    color: var(--stone-dark);
+    max-width: 540px;
+    font-weight: 300;
+    opacity: 0;
+    animation: fadeUp 1s 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+
+  .hero-line {
+    width: 60px;
+    height: 2px;
+    background: var(--stone);
+    margin-top: 3rem;
+    opacity: 0;
+    animation: fadeUp 1s 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+
+  .hero-cta-hint {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--warm-gray);
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    opacity: 0;
+    animation: fadeUp 1s 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+
+  .hero-chevron {
+    color: var(--warm-gray);
+    opacity: 0;
+    animation: fadeUp 1s 1.1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+
+  /* ========== SECTION HEADERS ========== */
+  .section-number {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 5rem;
+    font-weight: 900;
+    color: var(--warm-gray);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+
+  .section-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--stone-dark);
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 700;
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    line-height: 1.15;
+    color: var(--black);
+    letter-spacing: -0.02em;
+    margin-bottom: 2rem;
+  }
+
+  h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: var(--black);
+    margin-bottom: 1rem;
+  }
+
+  p {
+    margin-bottom: 1.5rem;
+    color: var(--ink);
+    font-weight: 400;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  /* ========== PULL QUOTE ========== */
+  .pull-quote {
+    margin: 4rem 0;
+    padding: 2.5rem 0;
+    border-top: 1px solid var(--stone-light);
+    border-bottom: 1px solid var(--stone-light);
+  }
+
+  .pull-quote blockquote {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    font-style: italic;
+    line-height: 1.4;
+    color: var(--stone-dark);
+    letter-spacing: -0.01em;
+  }
+
+  .pull-quote cite {
+    display: block;
+    margin-top: 1rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    font-style: normal;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--warm-gray);
+  }
+
+  /* ========== INLINE EMPHASIS ========== */
+  .highlight {
+    background: linear-gradient(180deg, transparent 60%, rgba(139, 125, 107, 0.15) 60%);
+    padding: 0 2px;
+  }
+
+  strong {
+    font-weight: 600;
+    color: var(--black);
+  }
+
+  /* ========== DIVIDER ========== */
+  .section-divider {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem 0;
+  }
+
+  .section-divider::before,
+  .section-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--stone-light);
+  }
+
+  .section-divider .diamond {
+    width: 6px;
+    height: 6px;
+    background: var(--stone);
+    transform: rotate(45deg);
+    flex-shrink: 0;
+  }
+
+  /* ========== DIAGRAM: TRUST SPECTRUM ========== */
+  .trust-spectrum {
+    margin: 3rem 0;
+    padding: 2.5rem;
+    background: var(--off-white);
+    border: 1px solid var(--stone-light);
+    border-radius: 2px;
+  }
+
+  .trust-spectrum .diagram-title {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--stone);
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .spectrum-bar-container {
+    position: relative;
+    margin: 0 auto;
+    max-width: 580px;
+  }
+
+  .spectrum-bar {
+    height: 48px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, var(--stone-light) 0%, var(--stone) 50%, var(--stone-deeper) 100%);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .spectrum-bar::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 19.5%,
+      rgba(255,255,255,0.3) 19.5%,
+      rgba(255,255,255,0.3) 20%
+    );
+  }
+
+  .spectrum-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .spectrum-labels .left { color: var(--warm-gray); }
+  .spectrum-labels .right { color: var(--stone-deeper); font-weight: 500; }
+
+  .spectrum-markers {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    max-width: 580px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .spectrum-marker {
+    text-align: center;
+    max-width: 160px;
+  }
+
+  .spectrum-marker .marker-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 auto 0.5rem;
+  }
+
+  .spectrum-marker:first-child .marker-dot {
+    background: var(--stone-light);
+    border: 2px solid var(--warm-gray);
+  }
+
+  .spectrum-marker:last-child .marker-dot {
+    background: var(--stone-deeper);
+    border: 2px solid var(--black);
+  }
+
+  .spectrum-marker .marker-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--stone);
+    margin-bottom: 0.3rem;
+  }
+
+  .spectrum-marker .marker-desc {
+    font-family: 'Source Serif 4', serif;
+    font-size: 0.75rem;
+    color: var(--stone-dark);
+    line-height: 1.4;
+  }
+
+  /* ========== DIAGRAM: COMPARISON BOXES ========== */
+  .comparison {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin: 3rem 0;
+  }
+
+  .comparison-box {
+    padding: 2rem;
+    border: 1px solid var(--stone-light);
+    border-radius: 2px;
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+
+  .comparison-box:hover {
+    transform: translateY(-2px);
+  }
+
+  .comparison-box.negative {
+    background: var(--white);
+  }
+
+  .comparison-box.positive {
+    background: var(--off-white);
+    border-color: var(--stone);
+  }
+
+  .comparison-box .box-icon {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  .comparison-box .box-title {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--stone);
+    margin-bottom: 0.75rem;
+  }
+
+  .comparison-box .box-heading {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--black);
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+  }
+
+  .comparison-box .box-text {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    color: var(--stone-dark);
+    margin-bottom: 0;
+  }
+
+  /* ========== ARTICLE IMAGES ========== */
+  .article-image {
+    margin: 3rem 0;
+    border: 1px solid var(--stone-light);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  .article-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* ========== STATS ROW ========== */
+  .stats-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 3rem 0;
+    padding: 2.5rem 0;
+    border-top: 1px solid var(--stone-light);
+    border-bottom: 1px solid var(--stone-light);
+  }
+
+  .stat {
+    text-align: center;
+  }
+
+  .stat .stat-number {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--black);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+
+  .stat .stat-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--stone);
+    line-height: 1.4;
+  }
+
+  /* ========== RESPONSIBILITY DIAGRAM ========== */
+  .responsibility-diagram {
+    margin: 3rem 0;
+    padding: 2.5rem;
+    background: var(--off-white);
+    border: 1px solid var(--stone-light);
+    border-radius: 2px;
+  }
+
+  .responsibility-diagram .diagram-title {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--stone);
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .resp-flow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .resp-node {
+    padding: 1rem 1.5rem;
+    border: 2px solid var(--stone);
+    border-radius: 2px;
+    text-align: center;
+    background: var(--white);
+    min-width: 140px;
+  }
+
+  .resp-node .node-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.55rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--stone);
+    margin-bottom: 0.3rem;
+  }
+
+  .resp-node .node-text {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--black);
+  }
+
+  .resp-arrow {
+    font-size: 1.2rem;
+    color: var(--stone);
+  }
+
+  .resp-equals {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--stone);
+  }
+
+  /* ========== TIMELINE / PATH FORWARD ========== */
+  .path-list {
+    margin: 2rem 0;
+    list-style: none;
+    counter-reset: path;
+  }
+
+  .path-list li {
+    counter-increment: path;
+    padding: 1.5rem 0 1.5rem 4rem;
+    border-bottom: 1px solid var(--stone-light);
+    position: relative;
+  }
+
+  .path-list li:last-child {
+    border-bottom: none;
+  }
+
+  .path-list li::before {
+    content: counter(path, decimal-leading-zero);
+    position: absolute;
+    left: 0;
+    top: 1.5rem;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--stone-light);
+  }
+
+  .path-list li strong {
+    display: block;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+    color: var(--black);
+  }
+
+  .path-list li span {
+    font-size: 0.9rem;
+    color: var(--stone-dark);
+    line-height: 1.6;
+  }
+
+  /* ========== CONTACT BUTTON ========== */
+  .contact-btn {
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.9rem 1.6rem;
+    background: var(--stone-deeper);
+    color: var(--white);
+    border: none;
+    border-radius: 2px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+    overflow: hidden;
+    box-shadow: 0 2px 20px rgba(74, 65, 57, 0.15);
+  }
+
+  .contact-btn::before {
+    content: '';
+    position: absolute;
+    top: 0; left: -100%; right: 100%; bottom: 0;
+    background: var(--black);
+    transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+    z-index: -1;
+  }
+
+  .contact-btn:hover::before {
+    left: 0;
+    right: 0;
+  }
+
+  .contact-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 30px rgba(74, 65, 57, 0.25);
+  }
+
+  .contact-btn .btn-arrow {
+    transition: transform 0.3s ease;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .contact-btn:hover .btn-arrow {
+    transform: translateX(4px);
+  }
+
+  /* ========== READ BAR & AUDIO PLAYER ========== */
+  .read-bar {
+    padding: 0 0 2rem;
+  }
+
+  .read-bar-inner {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.25rem 1.5rem;
+    background: var(--off-white);
+    border: 1px solid var(--stone-light);
+    border-radius: 2px;
+  }
+
+  .read-time {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--stone-dark);
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .read-time svg {
+    color: var(--stone);
+    flex-shrink: 0;
+  }
+
+  .read-bar-divider {
+    width: 1px;
+    height: 24px;
+    background: var(--stone-light);
+    flex-shrink: 0;
+  }
+
+  .audio-player {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .audio-play-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1.5px solid var(--stone);
+    background: var(--white);
+    color: var(--stone-dark);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+  }
+
+  .audio-play-btn:hover {
+    background: var(--stone-deeper);
+    border-color: var(--stone-deeper);
+    color: var(--white);
+  }
+
+  .audio-track {
+    flex: 1;
+    height: 4px;
+    background: var(--stone-light);
+    border-radius: 2px;
+    position: relative;
+    cursor: pointer;
+    min-width: 60px;
+  }
+
+  .audio-progress {
+    height: 100%;
+    background: var(--stone);
+    border-radius: 2px;
+    width: 0%;
+    transition: width 0.1s linear;
+    pointer-events: none;
+  }
+
+  .audio-handle {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--stone-dark);
+    border: 2px solid var(--white);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    pointer-events: none;
+  }
+
+  .audio-player:hover .audio-handle,
+  .audio-player.playing .audio-handle {
+    opacity: 1;
+  }
+
+  .audio-time {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.6rem;
+    font-weight: 400;
+    color: var(--stone);
+    white-space: nowrap;
+    min-width: 28px;
+    text-align: right;
+    flex-shrink: 0;
+  }
+
+  .audio-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.6rem;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--warm-gray);
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 768px) {
+    .read-bar-inner {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 1rem;
+    }
+
+    .read-bar-divider {
+      width: 100%;
+      height: 1px;
+    }
+
+    .audio-label {
+      display: none;
+    }
+  }
+
+  /* ========== CONTACT MODAL ========== */
+  .modal-overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s cubic-bezier(0.22, 1, 0.36, 1), visibility 0.4s;
+  }
+
+  .modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .modal-backdrop {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(26, 23, 20, 0.6);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+
+  .modal-container {
+    position: relative;
+    background: var(--white);
+    border: 1px solid var(--stone-light);
+    border-radius: 3px;
+    width: 90%;
+    max-width: 480px;
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 3rem;
+    transform: translateY(30px) scale(0.97);
+    transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+    box-shadow: 0 25px 80px rgba(26, 23, 20, 0.2), 0 4px 20px rgba(26, 23, 20, 0.1);
+  }
+
+  .modal-overlay.active .modal-container {
+    transform: translateY(0) scale(1);
+  }
+
+  .modal-close {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--warm-gray);
+    padding: 4px;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+
+  .modal-close:hover {
+    color: var(--black);
+    transform: rotate(90deg);
+  }
+
+  .modal-header {
+    margin-bottom: 2rem;
+  }
+
+  .modal-eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.6rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--stone);
+    display: block;
+    margin-bottom: 0.75rem;
+  }
+
+  .modal-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 1.2;
+    color: var(--black);
+    margin-bottom: 1.25rem;
+    letter-spacing: -0.02em;
+  }
+
+  .modal-title em {
+    font-style: italic;
+    color: var(--stone-dark);
+  }
+
+  .modal-line {
+    width: 40px;
+    height: 2px;
+    background: var(--stone);
+  }
+
+  .form-group {
+    margin-bottom: 1.25rem;
+  }
+
+  .form-group label {
+    display: block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.6rem;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--stone);
+    margin-bottom: 0.5rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    border: 1px solid var(--stone-light);
+    border-radius: 2px;
+    background: var(--off-white);
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 0.9rem;
+    color: var(--ink);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+    -webkit-appearance: none;
+  }
+
+  .form-group input::placeholder,
+  .form-group textarea::placeholder {
+    color: var(--warm-gray);
+    font-style: italic;
+  }
+
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: var(--stone);
+    box-shadow: 0 0 0 3px rgba(139, 125, 107, 0.1);
+  }
+
+  .form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+
+  .form-submit {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    background: var(--stone-deeper);
+    color: var(--white);
+    border: none;
+    border-radius: 2px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .form-submit::before {
+    content: '';
+    position: absolute;
+    top: 0; left: -100%; right: 100%; bottom: 0;
+    background: var(--black);
+    transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+    z-index: 0;
+  }
+
+  .form-submit:hover::before {
+    left: 0;
+    right: 0;
+  }
+
+  .form-submit .submit-text,
+  .form-submit .submit-arrow {
+    position: relative;
+    z-index: 1;
+  }
+
+  .form-submit .submit-arrow {
+    transition: transform 0.3s ease;
+  }
+
+  .form-submit:hover .submit-arrow {
+    transform: translateX(3px);
+  }
+
+  .form-submit:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
+  .form-success {
+    display: none;
+    text-align: center;
+    padding: 2rem 0;
+  }
+
+  .form-success.visible {
+    display: block;
+  }
+
+  .success-icon {
+    margin-bottom: 1.5rem;
+  }
+
+  .form-success h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--black);
+    margin-bottom: 0.5rem;
+  }
+
+  .form-success p {
+    font-size: 0.9rem;
+    color: var(--stone-dark);
+  }
+
+  body.modal-open {
+    overflow: hidden;
+  }
+
+  /* ========== FOOTER ========== */
+  .footer {
+    padding: 4rem 0;
+    border-top: 1px solid var(--stone-light);
+    text-align: center;
+  }
+
+  .footer p {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--warm-gray);
+  }
+
+  /* ========== ANIMATIONS ========== */
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Scroll-triggered animations */
+  .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .reveal-delay-1 { transition-delay: 0.1s; }
+  .reveal-delay-2 { transition-delay: 0.2s; }
+  .reveal-delay-3 { transition-delay: 0.3s; }
+
+  /* ========== RESPONSIVE ========== */
+  @media (max-width: 768px) {
+    html { font-size: 16px; }
+
+    .content-wrapper { padding: 0 1.5rem; }
+
+    section { padding: 3.5rem 0; }
+
+    .comparison {
+      grid-template-columns: 1fr;
+    }
+
+    .stats-row {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .resp-flow {
+      flex-direction: column;
+    }
+
+    .resp-arrow {
+      transform: rotate(90deg);
+    }
+
+    .nav-track { display: none; }
+
+    .contact-btn {
+      bottom: 1rem;
+      left: 1rem;
+      right: 1rem;
+      justify-content: center;
+    }
+
+    .section-number {
+      font-size: 3.5rem;
+    }
+
+    .modal-container {
+      padding: 2rem 1.5rem;
+      width: 95%;
+    }
+
+    .modal-title {
+      font-size: 1.4rem;
+    }
+
+    .spectrum-markers {
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .spectrum-marker {
+      max-width: 100%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero { min-height: 90vh; }
+    .pull-quote blockquote { font-size: 1.3rem; }
+    .image-placeholder { aspect-ratio: 4 / 3; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Navigation dots -->
+<nav class="nav-track" aria-label="Section navigation">
+  <button class="nav-dot active" data-target="hero" aria-label="Hero"></button>
+  <button class="nav-dot" data-target="paradox" aria-label="The Paradox"></button>
+  <button class="nav-dot" data-target="guardrail" aria-label="The Guardrail Trap"></button>
+  <button class="nav-dot" data-target="employee" aria-label="The Employee Paradox"></button>
+  <button class="nav-dot" data-target="responsibility" aria-label="The Responsibility Gap"></button>
+  <button class="nav-dot" data-target="obsolescence" aria-label="The Exponential Problem"></button>
+  <button class="nav-dot" data-target="path" aria-label="The Path Forward"></button>
+</nav>
+
+<!-- Contact Button -->
+<button class="contact-btn" onclick="openContactModal()">
+  <span>Let's Talk</span>
+  <svg class="btn-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 7h11M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<!-- Contact Modal -->
+<div class="modal-overlay" id="contactModal">
+  <div class="modal-backdrop" onclick="closeContactModal()"></div>
+  <div class="modal-container">
+    <button class="modal-close" onclick="closeContactModal()" aria-label="Close">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <line x1="4" y1="4" x2="16" y2="16" stroke="currentColor" stroke-width="1.5"/>
+        <line x1="16" y1="4" x2="4" y2="16" stroke="currentColor" stroke-width="1.5"/>
+      </svg>
+    </button>
+    <div class="modal-header">
+      <span class="modal-eyebrow">Get in touch</span>
+      <h2 class="modal-title">Let's talk about<br><em>your AI strategy.</em></h2>
+      <div class="modal-line"></div>
+    </div>
+    <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="dba7d0f6-01df-4cfa-9a67-6c349e239c47">
+      <input type="hidden" name="subject" value="New inquiry from Why Isn't AI Good Yet?">
+      <input type="hidden" name="from_name" value="AI Manifesto Contact Form">
+      <input type="checkbox" name="botcheck" class="hidden" style="display:none">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required placeholder="Your name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="you@company.com">
+      </div>
+      <div class="form-group">
+        <label for="company">Company</label>
+        <input type="text" id="company" name="company" placeholder="Your company">
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required placeholder="Tell us about your AI challenges..."></textarea>
+      </div>
+      <button type="submit" class="form-submit" id="submitBtn">
+        <span class="submit-text">Send Message</span>
+        <svg class="submit-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 7h11M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </form>
+    <div class="form-success" id="formSuccess">
+      <div class="success-icon">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+          <circle cx="24" cy="24" r="22" stroke="var(--stone-dark)" stroke-width="1.5"/>
+          <polyline points="14,24 22,32 34,16" fill="none" stroke="var(--stone-dark)" stroke-width="2"/>
+        </svg>
+      </div>
+      <h3>Message sent.</h3>
+      <p>We'll be in touch shortly.</p>
+    </div>
+  </div>
+</div>
+
+<main class="content-wrapper">
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" id="hero">
+    <p class="hero-eyebrow">A manifesto for the modern enterprise</p>
+    <h1>Why Isn't<br>AI <em>Good</em> Yet?</h1>
+    <p class="hero-byline">By <a href="https://romanslack.com" target="_blank" rel="noopener" class="byline-link">Roman Slack</a> &amp; <a href="https://www.anthropic.com/news/claude-opus-4-6" target="_blank" rel="noopener" class="byline-link">Opus4.6</a></p>
+    <p class="hero-subtitle">The uncomfortable truth about AI adoption in business, and why the companies getting it right look nothing like what you'd expect.</p>
+    <div class="hero-line"></div>
+    <p class="hero-cta-hint">Read below or listen to the audio version</p>
+    <svg class="hero-chevron" width="20" height="12" viewBox="0 0 20 12" fill="none"><path d="M2 2l8 8 8-8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </section>
+
+  <!-- ==================== READ TIME & AUDIO ==================== -->
+  <div class="read-bar reveal">
+    <div class="read-bar-inner">
+      <div class="read-time">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.2"/>
+          <path d="M8 4.5V8l2.5 1.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>5 min read</span>
+      </div>
+      <div class="read-bar-divider"></div>
+      <div class="audio-player" id="audioPlayer">
+        <button class="audio-play-btn" id="audioPlayBtn" aria-label="Play audio">
+          <svg class="icon-play" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M4 2.5l9 5.5-9 5.5V2.5z" fill="currentColor"/>
+          </svg>
+          <svg class="icon-pause" width="16" height="16" viewBox="0 0 16 16" fill="none" style="display:none">
+            <rect x="3" y="2" width="3.5" height="12" rx="1" fill="currentColor"/>
+            <rect x="9.5" y="2" width="3.5" height="12" rx="1" fill="currentColor"/>
+          </svg>
+        </button>
+        <div class="audio-track" id="audioTrack">
+          <div class="audio-progress" id="audioProgress"></div>
+          <div class="audio-handle" id="audioHandle"></div>
+        </div>
+        <span class="audio-time" id="audioTime">0:00</span>
+        <span class="audio-label">Listen to article</span>
+      </div>
+    </div>
+    <audio id="audioElement" preload="metadata" src="audio.mp3"></audio>
+  </div>
+
+  <!-- ==================== THE PARADOX ==================== -->
+  <section id="paradox">
+    <div class="reveal">
+      <span class="section-number">01</span>
+      <span class="section-label">The Paradox</span>
+      <h2>The people getting the most from AI trust it the most.</h2>
+    </div>
+
+    <div class="reveal reveal-delay-1">
+      <p>Right now, the humans extracting the most value from artificial intelligence are software engineers. They let AI <span class="highlight">control their entire computer</span>. It writes code, executes commands, manages files, deploys systems, all with full autonomy.</p>
+      <p>They operate in sandboxes, of course. But within those boundaries, the trust is <strong>absolute</strong>. And the results are extraordinary.</p>
+      <p>Meanwhile, when businesses try to implement AI into their operations (manufacturing, distribution, logistics, customer service) they do the opposite. They add guardrails. They add human checkpoints. They add approval workflows. They add oversight committees.</p>
+      <p>And then they wonder why AI doesn't seem to work.</p>
+    </div>
+
+    <div class="trust-spectrum reveal reveal-delay-2">
+      <div class="diagram-title">The Trust&ndash;Performance Spectrum</div>
+      <div class="spectrum-bar-container">
+        <div class="spectrum-bar"></div>
+        <div class="spectrum-labels">
+          <span class="left">Low Trust</span>
+          <span class="right">Full Trust</span>
+        </div>
+        <div class="spectrum-markers">
+          <div class="spectrum-marker">
+            <div class="marker-dot"></div>
+            <div class="marker-label">Most Businesses</div>
+            <div class="marker-desc">Heavy guardrails, constant oversight, limited autonomy, minimal results</div>
+          </div>
+          <div class="spectrum-marker">
+            <div class="marker-dot"></div>
+            <div class="marker-label">Power Users</div>
+            <div class="marker-desc">Full autonomy within boundaries, deep trust, extraordinary results</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pull-quote reveal">
+      <blockquote>&ldquo;It's like hiring the world's best consultant, then requiring them to get approval before every sentence they speak.&rdquo;</blockquote>
+    </div>
+  </section>
+
+  <div class="section-divider"><div class="diamond"></div></div>
+
+  <!-- ==================== THE GUARDRAIL TRAP ==================== -->
+  <section id="guardrail">
+    <div class="reveal">
+      <span class="section-number">02</span>
+      <span class="section-label">The Guardrail Trap</span>
+      <h2>Guardrails don't protect you.<br>They <em>paralyze</em> you.</h2>
+    </div>
+
+    <div class="reveal reveal-delay-1">
+      <p>The instinct to constrain AI is understandable. These systems are new, powerful, and operate in ways that feel opaque. Adding guardrails feels responsible. It feels safe.</p>
+      <p>But here's what's actually happening: every guardrail you add degrades performance. Every human checkpoint slows the system. Every approval workflow <strong>breaks the feedback loop</strong> that makes AI effective in the first place.</p>
+      <p>You're not getting a cutting-edge autonomous system. You're getting <span class="highlight">ChatGPT from two years ago</span>. A glorified chatbot that can barely handle a multi-step task.</p>
+    </div>
+
+    <div class="comparison reveal reveal-delay-2">
+      <div class="comparison-box negative">
+        <span class="box-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <rect x="2" y="2" width="24" height="24" rx="2" stroke="var(--warm-gray)" stroke-width="1.5"/>
+            <line x1="8" y1="8" x2="20" y2="20" stroke="var(--warm-gray)" stroke-width="1.5"/>
+            <line x1="20" y1="8" x2="8" y2="20" stroke="var(--warm-gray)" stroke-width="1.5"/>
+          </svg>
+        </span>
+        <div class="box-title">What businesses buy</div>
+        <div class="box-heading">Constrained AI with training wheels</div>
+        <p class="box-text">Human approval at every step. Limited scope. Narrow tasks. Feels safe, delivers almost nothing.</p>
+      </div>
+      <div class="comparison-box positive">
+        <span class="box-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <rect x="2" y="2" width="24" height="24" rx="2" stroke="var(--stone-dark)" stroke-width="1.5"/>
+            <polyline points="8,15 12,19 20,9" fill="none" stroke="var(--stone-dark)" stroke-width="1.5"/>
+          </svg>
+        </span>
+        <div class="box-title">What actually works</div>
+        <div class="box-heading">Autonomous AI with full operational control</div>
+        <p class="box-text">Clear boundaries, then full trust within them. Complex, multi-step execution. Real transformation.</p>
+      </div>
+    </div>
+
+    <div class="article-image reveal">
+      <img src="1image.jpg" alt="The Guardrail Trap: a figure trapped behind barriers versus a figure standing free in open space" loading="lazy">
+    </div>
+  </section>
+
+  <div class="section-divider"><div class="diamond"></div></div>
+
+  <!-- ==================== THE EMPLOYEE PARADOX ==================== -->
+  <section id="employee">
+    <div class="reveal">
+      <span class="section-number">03</span>
+      <span class="section-label">The Employee Paradox</span>
+      <h2>You're asking people to architect their own obsolescence.</h2>
+    </div>
+
+    <div class="reveal reveal-delay-1">
+      <p>Here is perhaps the most difficult truth in AI adoption: to teach an AI system the actual tasks of your company, <strong>you need the people who currently do those tasks</strong>.</p>
+      <p>You are, in essence, asking your employees to assist in their own replacement. And the culture of that is <span class="highlight">enormously challenging</span>.</p>
+    </div>
+
+    <div class="stats-row reveal reveal-delay-2">
+      <div class="stat">
+        <div class="stat-number">100%</div>
+        <div class="stat-label">of domain knowledge<br>lives in your people</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number">0%</div>
+        <div class="stat-label">incentive to transfer<br>it honestly</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number">&infin;</div>
+        <div class="stat-label">ways to slow<br>the process down</div>
+      </div>
+    </div>
+
+    <div class="reveal">
+      <p>This isn't malice. It's human nature. Employees will be hesitant. They'll be bureaucratic. They'll inject themselves into every process. They'll slow things down through risk aversion, over-documentation, and endless edge-case concerns.</p>
+      <p>They will, consciously or not, <strong>make the AI look worse than it is.</strong></p>
+      <p>This is the single hardest organizational challenge in AI adoption. Not the technology. Not the integration. It's the the <span class="highlight">human incentive structure</span> that actively works against successful implementation.</p>
+    </div>
+
+    <div class="article-image reveal">
+      <img src="2image.jpg" alt="The Culture Challenge: a person building steps toward a door that replaces themselves" loading="lazy">
+    </div>
+
+    <div class="pull-quote reveal">
+      <blockquote>&ldquo;The bottleneck isn't artificial intelligence. It's natural resistance.&rdquo;</blockquote>
+    </div>
+  </section>
+
+  <div class="section-divider"><div class="diamond"></div></div>
+
+  <!-- ==================== THE RESPONSIBILITY GAP ==================== -->
+  <section id="responsibility">
+    <div class="reveal">
+      <span class="section-number">04</span>
+      <span class="section-label">The Responsibility Gap</span>
+      <h2>In code, it's already solved. In business, it's still an excuse.</h2>
+    </div>
+
+    <div class="reveal reveal-delay-1">
+      <p>When a developer uses AI to write code and that code has a bug, <strong>the developer is responsible.</strong> Not the AI. Not the tool maker. The developer. This is universally accepted.</p>
+      <p>So why can't the same model apply to business?</p>
+      <p>If an AI system makes a decision in your supply chain, in your customer service pipeline, in your manufacturing process, the responsibility falls on the company. On the CEO. On leadership. Just as it would if a human employee made that same decision.</p>
+    </div>
+
+    <div class="responsibility-diagram reveal reveal-delay-2">
+      <div class="diagram-title">The Responsibility Model</div>
+      <div class="resp-flow">
+        <div class="resp-node">
+          <div class="node-label">In Software</div>
+          <div class="node-text">Developer owns the output</div>
+        </div>
+        <span class="resp-arrow">&rarr;</span>
+        <div class="resp-node">
+          <div class="node-label">In Business</div>
+          <div class="node-text">Company owns the output</div>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 1.5rem;">
+        <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--stone);">Same principle &middot; Same accountability &middot; Same trust</span>
+      </div>
+    </div>
+
+    <div class="reveal">
+      <p>The &ldquo;but who's responsible?&rdquo; question isn't an unsolved philosophical problem. <strong>It's a solved organizational one.</strong> We just need to apply the same framework that already works in software development to the rest of the enterprise.</p>
+    </div>
+
+    <div class="article-image reveal">
+      <img src="3image.jpg" alt="Accountability Framework: developer owns output equals company owns output" loading="lazy">
+    </div>
+  </section>
+
+  <div class="section-divider"><div class="diamond"></div></div>
+
+  <!-- ==================== THE EXPONENTIAL PROBLEM ==================== -->
+  <section id="obsolescence">
+    <div class="reveal">
+      <span class="section-number">05</span>
+      <span class="section-label">The Exponential Problem</span>
+      <h2>AI doesn't improve linearly. Your window is closing <em>exponentially.</em></h2>
+    </div>
+
+    <div class="reveal reveal-delay-1">
+      <p>Here is what most business leaders have not internalized: AI capability is not growing like headcount or revenue. It's growing like computing power. <strong>It doubles, then doubles again, then doubles again.</strong></p>
+      <p>That AI chatbot you deployed in 2024? It's not slightly outdated. It's the equivalent of using a fax machine in the age of email. The gap between what you implemented and what exists today isn't months of progress. It's <span class="highlight">generations of capability</span>.</p>
+    </div>
+
+    <div class="comparison reveal reveal-delay-2">
+      <div class="comparison-box negative">
+        <div class="box-title">What you deployed</div>
+        <div class="box-heading">A chatbot that answers questions</div>
+        <p class="box-text">Single-task. Needs hand-holding. Assists one employee at a time. You called this &ldquo;AI transformation.&rdquo;</p>
+      </div>
+      <div class="comparison-box positive">
+        <div class="box-title">What exists now</div>
+        <div class="box-heading">Autonomous systems running entire workflows</div>
+        <p class="box-text">Controls full computers. Executes multi-step operations. Does the work of ten people, simultaneously, around the clock.</p>
+      </div>
+    </div>
+
+    <div class="reveal">
+      <p>And while you're building &ldquo;AI-assisted tools&rdquo; to make your employees 20% more productive, your competitor is replacing those roles entirely. Not in five years. <strong>Now.</strong> The systems already exist. It's just a matter of implementation.</p>
+      <p>This isn't a future prediction. AI can now perform most knowledge work better than humans. That's not an opinion. It's a measurable, demonstrable fact. Every month you spend &ldquo;augmenting&rdquo; workers with yesterday's AI is a month your competitor spends deploying hundreds of autonomous agents that don't sleep, don't quit, and get better every week.</p>
+    </div>
+
+    <div class="pull-quote reveal">
+      <blockquote>&ldquo;The future of AI in business is not amplifying workers. It's replacing work. The sooner you accept that, the sooner you survive it.&rdquo;</blockquote>
+    </div>
+
+    <div class="reveal">
+      <p>This isn't fear-mongering. It's pattern recognition. The companies still debating whether to &ldquo;experiment with AI&rdquo; are going to look up one day and realize they're not behind on a trend. <span class="highlight">They're in the middle of an extinction event</span>.</p>
+    </div>
+  </section>
+
+  <div class="section-divider"><div class="diamond"></div></div>
+
+  <!-- ==================== THE PATH FORWARD ==================== -->
+  <section id="path">
+    <div class="reveal">
+      <span class="section-number">06</span>
+      <span class="section-label">The Path Forward</span>
+      <h2>Four shifts that change everything.</h2>
+    </div>
+
+    <div class="reveal reveal-delay-1">
+      <p>The companies that will dominate the next decade aren't the ones with the most guardrails. They're the ones willing to make four fundamental shifts:</p>
+    </div>
+
+    <ol class="path-list reveal reveal-delay-2">
+      <li>
+        <strong>Trust more, guardrail less.</strong>
+        <span>Define clear boundaries, then grant full autonomy within them. Stop micromanaging systems that are designed to operate independently. The sandbox model from software works. Apply it.</span>
+      </li>
+      <li>
+        <strong>Accept responsibility.</strong>
+        <span>The CEO takes ownership of AI actions, just as they own every other business decision. Stop waiting for the industry to &ldquo;solve&rdquo; accountability. It's already solved. Adopt it.</span>
+      </li>
+      <li>
+        <strong>Redesign the incentive structure.</strong>
+        <span>Don't ask employees to replace themselves. Create new roles, transition paths, and reward structures that align human interests with AI adoption. The culture problem is a design problem.</span>
+      </li>
+      <li>
+        <strong>Buy what works, not what's comfortable.</strong>
+        <span>Stop shopping for chatbots. Invest in autonomous systems that can actually transform your operations. The discomfort you feel is the feeling of competitive advantage.</span>
+      </li>
+    </ol>
+
+    <div class="pull-quote reveal">
+      <blockquote>&ldquo;The question isn't whether AI is good enough. It's whether your organization is brave enough to let it be.&rdquo;</blockquote>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <p>&copy; 2026 &middot; All rights reserved</p>
+  </footer>
+
+</main>
+
+<script>
+  // ===== Scroll reveal =====
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+  reveals.forEach(el => observer.observe(el));
+
+  // ===== Nav dots =====
+  const sections = document.querySelectorAll('section[id]');
+  const dots = document.querySelectorAll('.nav-dot');
+
+  const sectionObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        dots.forEach(d => d.classList.remove('active'));
+        const activeDot = document.querySelector(`.nav-dot[data-target="${entry.target.id}"]`);
+        if (activeDot) activeDot.classList.add('active');
+      }
+    });
+  }, { threshold: 0.3 });
+
+  sections.forEach(s => sectionObserver.observe(s));
+
+  dots.forEach(dot => {
+    dot.addEventListener('click', () => {
+      const target = document.getElementById(dot.dataset.target);
+      if (target) target.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+
+  // ===== Audio player =====
+  const audio = document.getElementById('audioElement');
+  const playBtn = document.getElementById('audioPlayBtn');
+  const iconPlay = playBtn.querySelector('.icon-play');
+  const iconPause = playBtn.querySelector('.icon-pause');
+  const track = document.getElementById('audioTrack');
+  const progress = document.getElementById('audioProgress');
+  const handle = document.getElementById('audioHandle');
+  const timeDisplay = document.getElementById('audioTime');
+  const playerEl = document.getElementById('audioPlayer');
+
+  function formatTime(s) {
+    const m = Math.floor(s / 60);
+    const sec = Math.floor(s % 60);
+    return m + ':' + (sec < 10 ? '0' : '') + sec;
+  }
+
+  playBtn.addEventListener('click', () => {
+    if (audio.paused) {
+      audio.play();
+      iconPlay.style.display = 'none';
+      iconPause.style.display = 'block';
+      playerEl.classList.add('playing');
+    } else {
+      audio.pause();
+      iconPlay.style.display = 'block';
+      iconPause.style.display = 'none';
+      playerEl.classList.remove('playing');
+    }
+  });
+
+  audio.addEventListener('timeupdate', () => {
+    if (audio.duration) {
+      const pct = (audio.currentTime / audio.duration) * 100;
+      progress.style.width = pct + '%';
+      handle.style.left = pct + '%';
+      timeDisplay.textContent = formatTime(audio.currentTime);
+    }
+  });
+
+  audio.addEventListener('loadedmetadata', () => {
+    timeDisplay.textContent = formatTime(audio.duration);
+  });
+
+  audio.addEventListener('ended', () => {
+    iconPlay.style.display = 'block';
+    iconPause.style.display = 'none';
+    playerEl.classList.remove('playing');
+    progress.style.width = '0%';
+    handle.style.left = '0%';
+  });
+
+  track.addEventListener('click', (e) => {
+    const rect = track.getBoundingClientRect();
+    const pct = (e.clientX - rect.left) / rect.width;
+    if (audio.duration) {
+      audio.currentTime = pct * audio.duration;
+    }
+  });
+
+  // ===== Contact modal =====
+  const modal = document.getElementById('contactModal');
+
+  function openContactModal() {
+    modal.classList.add('active');
+    document.body.classList.add('modal-open');
+  }
+
+  function closeContactModal() {
+    modal.classList.remove('active');
+    document.body.classList.remove('modal-open');
+  }
+
+  // Close on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('active')) {
+      closeContactModal();
+    }
+  });
+
+  // ===== Web3Forms submission =====
+  const contactForm = document.getElementById('contactForm');
+  const submitBtn = document.getElementById('submitBtn');
+  const formSuccess = document.getElementById('formSuccess');
+
+  contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    submitBtn.disabled = true;
+    submitBtn.querySelector('.submit-text').textContent = 'Sending...';
+
+    const formData = new FormData(contactForm);
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: json
+      });
+      const result = await response.json();
+
+      if (result.success) {
+        contactForm.style.display = 'none';
+        formSuccess.classList.add('visible');
+      } else {
+        submitBtn.disabled = false;
+        submitBtn.querySelector('.submit-text').textContent = 'Something went wrong';
+        setTimeout(() => {
+          submitBtn.querySelector('.submit-text').textContent = 'Send Message';
+        }, 3000);
+      }
+    } catch (err) {
+      submitBtn.disabled = false;
+      submitBtn.querySelector('.submit-text').textContent = 'Error, try again';
+      setTimeout(() => {
+        submitBtn.querySelector('.submit-text').textContent = 'Send Message';
+      }, 3000);
+    }
+  });
+</script>
+
+</body>
+</html>
